@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:foregroundGravity="top|bottom|center"
+        android:minWidth="150"
+        android:minHeight="80"
+        android:text="LIMPAR"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_column="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_row="3" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="161dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:foregroundGravity="top|bottom|center"
+        android:minWidth="150sp"
+        android:minHeight="80sp"
+        android:text="AGENDAR"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_column="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_row="3"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <TextView
+        android:id="@+id/fgts.txt"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:background="#2196F3"
+        android:text="     AGENDAMENTO MÉDICO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textAgendaFacil"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:text="      Agenda PARANA"
+        android:textColor="#2196F3"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="394dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cpf:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <EditText
+        android:id="@+id/editTextTipodeConsulta"
+        android:layout_width="395dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tipo de Consulta:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <EditText
+        android:id="@+id/editObs"
+        android:layout_width="402dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Obs:"
+        android:inputType="textMultiLine"
+        android:textColorHint="#101010"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="           20/10/2020"
+        android:inputType="date|text|time"
+        android:textColor="#101010"
+        android:textColorHint="#101010"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="398dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

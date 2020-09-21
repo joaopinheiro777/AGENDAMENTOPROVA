@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="506dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/agendamento"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/fgts.txt"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:background="#2196F3"
+        android:text="     AGENDAMENTO MÉDICO"
+        android:textAppearance="@style/Text.Aparrence.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAgendaFacil"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Consulta a sua Agenda"
+        android:textColor="#2196F3"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/editTipodeConsultaFiltra"
+        android:layout_width="392dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollbarSize="24dp"
+        android:text="Tipo de Consulta:"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="392dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:ems="24"
+        android:inputType="textPersonName"
+        android:text="Médico:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/editData1"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="    10/09/2020"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/editData2"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="    20/09/2020"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <EditText
+        android:id="@+id/editLista"
+        android:layout_width="392dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Lista:"
+        android:inputType="textMultiLine"
+        android:scrollbarSize="24dp"
+        android:textColorHint="#101010"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:id="@+id/textDe"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:text="  De:"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textÀ"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:text="   À:"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="200dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:foregroundGravity="top|bottom|center"
+        android:minWidth="150dp"
+        android:minHeight="80dp"
+        android:text="VOLTAR"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_column="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_row="3" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="200dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:foregroundGravity="top|bottom|center"
+        android:minWidth="150sp"
+        android:minHeight="80sp"
+        android:text="IMPRIMIR"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_column="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_row="3"
+        tools:layout_editor_absoluteY="570dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
